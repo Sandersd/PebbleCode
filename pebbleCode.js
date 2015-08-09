@@ -20,7 +20,7 @@ simply.on('singleClick', function(e) {
       at: count
     });*/
     simply.subtitle(++count);
-  } else if (e.button === 'middle') {
+  } else if (e.button === 'select') {
     /*Dots.insert({
       type: ' ',
       at: count
