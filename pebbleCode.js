@@ -4,7 +4,7 @@
 simply.title('Hello World!');
 simply.vibe('short');
 
-var count = parseInt(localStorage.getItem('count')) || 0;
+//var count = parseInt(localStorage.getItem('count')) || 0;
 
 simply.on('singleClick', function(e) {
   if (e.button === 'up') {
@@ -13,21 +13,21 @@ simply.on('singleClick', function(e) {
       type: 'dot',
       at: count
     });*/
-    simply.subtitle(++count);
+    simply.subtitle('.');
   } else if (e.button === 'down') {
     /*Dots.insert({
       type: 'dash',
       at: count
     });*/
-    simply.subtitle(++count);
+    simply.subtitle('_');
   } else if (e.button === 'select') {
     /*Dots.insert({
       type: ' ',
       at: count
     });*/
-    simply.subtitle(++count);
+    simply.subtitle(' ');
   }
-  localStorage.setItem('count', count);
+  //localStorage.setItem('count', count);
 });
 
 simply.text({ title: 'Counter', subtitle: count });
