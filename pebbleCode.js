@@ -39,6 +39,6 @@ simply.on('longClick', function(e) {
   }
 });
 
-sendMsg(msg) {
+function sendMsg(msg) {
   console.log(msg);
 }
