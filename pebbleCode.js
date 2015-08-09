@@ -30,8 +30,15 @@ simply.on('singleClick', function(e) {
   localStorage.setItem('string', string);
 });
 
-simply.text({ title: 'String', subtitle: '' });
+simply.text({ title: 'PebbleCode', subtitle: '' });
 
-simply.on('accelTap', function(e) {
-  simply.subtitle('You tapped across ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
+simply.on('longClick', function(e) {
+  if(e.button === 'select') {
+    sendMsg(localStorage.getItem('string'));
+    simply.vibe('short');
+  }
 });
+
+sendMsg(msg) {
+  console.log(msg);
+}
