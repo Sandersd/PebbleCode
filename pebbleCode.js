@@ -1,9 +1,5 @@
 //Dots = new Mongo.Collection("dots");
 
-
-simply.title('Hello World!');
-simply.vibe('short');
-
 var string = localStorage.getItem('string');
 
 simply.on('singleClick', function(e) {
@@ -13,19 +9,22 @@ simply.on('singleClick', function(e) {
       type: 'dot',
       at: count
     });*/
-    simply.subtitle(''+string+'.');
+    string += ''+'.';
+    simply.subtitle(string);
   } else if (e.button === 'down') {
     /*Dots.insert({
       type: 'dash',
       at: count
     });*/
-    simply.subtitle(''+string+'_');
+    string += ''+'_';
+    simply.subtitle(string);
   } else if (e.button === 'select') {
     /*Dots.insert({
       type: ' ',
       at: count
     });*/
-    simply.subtitle(''+string+' ');
+    string += ''+' ';
+    simply.subtitle(string);
   }
   localStorage.setItem('string', string);
 });
