@@ -37,8 +37,6 @@ simply.on('accelTap', function(e) {
 });
 */
 
-var UI = require('ui');
-var Settings = require('settings');
 
 var config = require('config');
 
@@ -54,7 +52,7 @@ App.init = function() {
   App.players = [];
   App.playerItems = [];
 
-  App.homeMenu = new UI.Menu();
+  //App.homeMenu = new UI.Menu();
 
   App.homeMenu.section(0, {
     title: 'Leaderboard',
