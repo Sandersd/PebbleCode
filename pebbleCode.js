@@ -52,16 +52,10 @@ App.init = function() {
   App.players = [];
   App.playerItems = [];
 
-  //App.homeMenu = new UI.Menu();
+  simply.text({ title: 'Leaderboard'});
 
-  App.homeMenu.section(0, {
-    title: 'Leaderboard',
-    items: [{
-      title: 'Loading...'
-    }]
-  });
 
-  App.homeMenu.show();
+
 
   Deps.autorun(function() {
     App.getPlayers();
