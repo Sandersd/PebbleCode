@@ -1,6 +1,7 @@
 //Dots = new Mongo.Collection("dots");
 
 var string = localStorage.getItem('string');
+string = '';
 
 simply.on('singleClick', function(e) {
   if (e.button === 'up') {
