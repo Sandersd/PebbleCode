@@ -13,19 +13,19 @@ simply.on('singleClick', function(e) {
       type: 'dot',
       at: count
     });*/
-    simply.subtitle(string+'.');
+    simply.subtitle(''+string+'.');
   } else if (e.button === 'down') {
     /*Dots.insert({
       type: 'dash',
       at: count
     });*/
-    simply.subtitle(string+'_');
+    simply.subtitle(''+string+'_');
   } else if (e.button === 'select') {
     /*Dots.insert({
       type: ' ',
       at: count
     });*/
-    simply.subtitle(string+' ');
+    simply.subtitle(''+string+' ');
   }
   localStorage.setItem('string', string);
 });
