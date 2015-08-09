@@ -86,9 +86,7 @@ App.getPlayers = function() {
   });
 };
 
-Settings.config(
-  { url: config.siteUrl }
-);
+
 
 App.init();
 
