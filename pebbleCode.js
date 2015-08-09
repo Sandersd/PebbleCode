@@ -30,7 +30,7 @@ simply.on('singleClick', function(e) {
   //localStorage.setItem('count', count);
 });
 
-simply.text({ title: 'Counter', subtitle: count });
+simply.text({ title: 'Counter', subtitle: '' });
 
 simply.on('accelTap', function(e) {
   simply.subtitle('You tapped across ' + (e.direction > 0 ? '+' : '-') + e.axis + '!');
